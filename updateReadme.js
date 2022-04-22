@@ -1,11 +1,21 @@
 // Include node fs (file stream) and https modules
 const fs = require('fs');
 
-const totalYears = (
-  (new Date() - new Date(2019, 8, 9)) /
-  (60 * 60 * 24 * 1000) /
-  365
-).toFixed(1);
+function getTotalYears() {
+  const joinDate = new Date(2019, 8, 9);
+  const currentDate = new Date();
+
+  const startMonth = joinDate.getFullYear() * 12 + joinDate.getMonth();
+  const endMonth = currentDate.getFullYear() * 12 + currentDate.getMonth();
+  const monthInterval = endMonth - startMonth;
+
+  const yearsOfExperience = Math.floor(monthInterval / 12);
+  const monthsOfExperience = monthInterval % 12;
+
+  return yearsOfExperience + '.' + monthsOfExperience;
+}
+
+const totalYears = getTotalYears();
 
 function readWriteAsync() {
   // Update README using FS
@@ -16,10 +26,15 @@ function readWriteAsync() {
 
     const stringToInsert = `I have around ${totalYears} years of experience`;
 
-    const updatedMd = data.replace(
-      /I have around 3 years of experience/g,
-      stringToInsert
-    );
+    const regExp = new RegExp(
+      `I have around ${(totalYears - 0.1).toFixed(1)} years of experience`
+    ); // regex pattern string
+
+    // const updatedMd = data.replace(
+    //   /I have around 3 years of experience/g,
+    //   stringToInsert
+    // );
+    const updatedMd = data.replace(regExp, stringToInsert);
 
     // Write the new README
     fs.writeFile('README.md', updatedMd, 'utf-8', (err) => {
@@ -27,7 +42,7 @@ function readWriteAsync() {
         throw err;
       }
 
-      console.log('README update complete.', updatedMd);
+      console.log('README update complete.');
     });
   });
 }
