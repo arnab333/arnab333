@@ -16,9 +16,8 @@ function readWriteAsync() {
 
     const stringToInsert = `I have around ${totalYears} years of experience`;
 
-    // Regex101.com is a lifesaver!
     const updatedMd = data.replace(
-      /(?<=I have around 3 years of experience\n)[\s\S]*(?=\!\[Build)/gim,
+      /I have around 3 years of experience/g,
       stringToInsert
     );
 
@@ -28,7 +27,7 @@ function readWriteAsync() {
         throw err;
       }
 
-      console.log('README update complete.');
+      console.log('README update complete.', updatedMd);
     });
   });
 }
