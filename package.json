@@ -1,0 +1,17 @@
+{
+  "name": "arnab333",
+  "version": "1.0.0",
+  "description": "Personal GitHub README repo",
+  "main": "updateReadme.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnab333/arnab333.git"
+  },
+  "author": "Arnab",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnab333/arnab333/issues"
+  },
+  "homepage": "https://github.com/arnab333/arnab333#readme"
+}
