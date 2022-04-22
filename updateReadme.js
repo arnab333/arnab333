@@ -19,7 +19,7 @@ function readWriteAsync() {
     // Regex101.com is a lifesaver!
     const updatedMd = data.replace(
       /(?<=I have around 3 years of experience\n)[\s\S]*(?=\!\[Build)/gim,
-      articles
+      stringToInsert
     );
 
     // Write the new README
