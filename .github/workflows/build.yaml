@@ -3,7 +3,7 @@ name: Build README
 
 on:
   schedule:
-    - cron: '0 0 1 * *' # Run workflow At 00:00 on day-of-month 1
+    - cron: '0 0 10 * *' # Run workflow At 00:00 on day-of-month 10
     # - cron: '*/10 * * * *' # Run workflow At every 10th minute.
   # Run workflow on pushes to main branch
   push:
