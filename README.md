@@ -6,7 +6,6 @@ I started my career with JavaScript, mainly worked with Node & React. Later I go
 
 - 🌍  I'm based in India
 - 🖥️  See my portfolio at [https://arnab.xyz/](https://arnab.xyz/)
-- ✉️  You can contact me at [arnab3111@gmail.com](mailto:arnab3111@gmail.com)
 - 🧠  I'm learning Various Golang frameworks as well as DevOps
 - 🤝  I'm open to collaborating on any interesting projects
 
