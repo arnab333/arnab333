@@ -2,10 +2,9 @@
 
 ## Software Engineer
 
-I started my career with JavaScript, mainly worked with Node & React. Later I got an opportunity to work with Go (Golang) and currently loving it. I have around 2.9 years of experience. Although, I have worked with both frontend and backend, but I am more passionate about backend development.
+I am a passionate software engineer. Not biased toward any technologies. Started with JavaScript and now working with Go (Golang).
 
 - 🌍  I'm based in India
-- 🖥️  See my portfolio at [https://arnab.xyz/](https://arnab.xyz/)
 - ✉️  You can contact me at [mail@arnab.xyz](mailto:mail@arnab.xyz)
 - 🧠  I'm learning Various Golang frameworks as well as DevOps
 - 🤝  I'm open to collaborating on any interesting projects
