@@ -5,7 +5,7 @@
 I am a passionate software engineer. Not biased toward any technologies. Started with JavaScript and now working with Go (Golang).
 
 - 🌍  I'm based in India
-- ✉️  You can contact me at [mail@arnab.xyz](mailto:mail@arnab.xyz)
+<!-- - ✉️  You can contact me at [mail@arnab.xyz](mailto:mail@arnab.xyz) -->
 - 🧠  I'm learning Various Golang frameworks as well as DevOps
 - 🤝  I'm open to collaborating on any interesting projects
 
