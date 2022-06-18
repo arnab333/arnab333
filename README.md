@@ -2,7 +2,7 @@
 
 ## Software Engineer
 
-I am a passionate software engineer. Not biased toward any technologies. Started with JavaScript and now working with Go (Golang).
+I am a passionate software engineer. Not biased towards any technologies. Started with JavaScript and now working with Go (Golang).
 
 - 🌍  I'm based in India
 - 🧠  I'm learning Various Golang frameworks as well as DevOps
