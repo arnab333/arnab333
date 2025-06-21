@@ -23,6 +23,10 @@ I am a passionate software engineer. Not biased towards any technologies. Starte
 <a href="https://opensearch.org/" target="_blank" rel="noreferrer"><img src="./images/opensearch.svg" width="36" height="36" alt="OpenSearch" /></a>
 <a href="https://developer.hashicorp.com/terraform" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" width="36" height="36" alt="Terraform" /></a>
 <a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="36" height="36" alt="Docker" /></a>
+<a href="https://redis.io/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg" width="36" height="36" alt="Redis" /></a>
+<a href="https://redis.io/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original-wordmark.svg" width="36" height="36" alt="Redis" /></a>
+<a href="https://groovy-lang.org/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/groovy/groovy-original.svg" width="36" height="36" alt="Groovy" /></a>
+<a href="https://grpc.io/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/grpc/grpc-original.svg" width="36" height="36" alt="gRPC" /></a>
 </p>
 
 ### Socials
