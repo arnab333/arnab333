@@ -21,6 +21,8 @@ I am a passionate software engineer. Not biased towards any technologies. Starte
 <a href="https://www.python.org/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg" width="36" height="36" alt="Python" /></a>
 <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" width="36" height="36" alt="AWS" /></a>
 <a href="https://opensearch.org/" target="_blank" rel="noreferrer"><img src="./images/opensearch.svg" width="36" height="36" alt="OpenSearch" /></a>
+<a href="https://developer.hashicorp.com/terraform" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/terraform/terraform-original-wordmark.svg" width="36" height="36" alt="Terraform" /></a>
+<a href="https://www.docker.com/" target="_blank" rel="noreferrer"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original-wordmark.svg" width="36" height="36" alt="Docker" /></a>
 </p>
 
 ### Socials
