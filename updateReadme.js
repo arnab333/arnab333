@@ -1,21 +1,19 @@
 const fs = require('fs');
 
 function getTotalYears() {
-    const joinDate = new Date(2019, 8, 9); // Sept 9, 2019
+    const joinDate = new Date(2019, 8, 9); // September 9, 2019
     const currentDate = new Date();
 
     const startMonth = joinDate.getFullYear() * 12 + joinDate.getMonth();
     const endMonth = currentDate.getFullYear() * 12 + currentDate.getMonth();
     const monthInterval = endMonth - startMonth;
 
-    const yearsOfExperience = Math.floor(monthInterval / 12);
-    const monthsOfExperience = monthInterval % 12;
+    const years = Math.floor(monthInterval / 12);
+    const months = monthInterval % 12;
+    const decimal = months / 12;
 
-    return yearsOfExperience + '.' + monthsOfExperience;
-}
-
-function escapeRegExp(string) {
-    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const total = years + decimal;
+    return decimal > 0.5 ? Math.ceil(total) : parseFloat((years + decimal).toFixed(1));
 }
 
 function updateReadme() {
@@ -25,13 +23,18 @@ function updateReadme() {
     fs.readFile(readmePath, 'utf-8', (err, data) => {
         if (err) throw err;
 
-        const oldString = 'A backend engineer with 5+ years of experience building high-performance, cloud-native systems.';
-        const newString = `A backend engineer with ${totalYears}+ years of experience building high-performance, cloud-native systems.`;
+        const newLine = `A backend engineer with ${totalYears}+ years of experience building high-performance, cloud-native systems.`;
 
-        const regex = new RegExp(escapeRegExp(oldString), 'g');
-        const updated = data.replace(regex, newString);
+        const regex = /A backend engineer with \d+(\.\d+)?\+ years of experience building high-performance, cloud-native systems\./;
 
-        fs.writeFile(readmePath, updated, 'utf-8', (err) => {
+        if (!regex.test(data)) {
+            console.warn('Pattern not found in README.md. No changes made.');
+            return;
+        }
+
+        const updatedData = data.replace(regex, newLine);
+
+        fs.writeFile(readmePath, updatedData, 'utf-8', (err) => {
             if (err) throw err;
             console.log(`README updated with ${totalYears}+ years of experience.`);
         });

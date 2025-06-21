@@ -2,10 +2,14 @@
 
 ## Software Engineer
 
-👋 Hi, I'm Arnab — a backend engineer with 6+ years of experience building high-performance, cloud-native systems. I specialize in Node.js, TypeScript, and Java, crafting resilient microservices, scalable APIs, and distributed architectures. Passionate about CI/CD, DevOps, and system design, I love turning complex technical challenges into elegant, maintainable solutions. Always exploring, always building.
+A backend engineer with 6+ years of experience building high-performance, cloud-native systems. I specialize in
+Node.js,
+TypeScript, and Java, crafting resilient microservices, scalable APIs, and distributed architectures. Passionate about
+CI/CD, DevOps, and system design, I love turning complex technical challenges into elegant, maintainable solutions.
+Always exploring, always building.
 
-- 🌍  I'm based in India
-- 🤝  I'm open to collaborating on any interesting projects
+- 🌍 I'm based in India
+- 🤝 I'm open to collaborating on any interesting projects
 
 ### Skills
 
