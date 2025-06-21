@@ -3,9 +3,10 @@ name: Build README
 
 on:
   schedule:
-#    - cron: '0 0 */2 * *' # Run workflow At 00:00 on every 2nd day-of-month
-#     - cron: '0 0 10 * *' # Run workflow At 00:00 on day-of-month 10
-     - cron: '*/10 * * * *' # Run workflow At every 10th minute.
+    #     - cron: '0 0 */2 * *' # Run workflow At 00:00 on every 2nd day-of-month
+    #     - cron: '0 0 10 * *' # Run workflow At 00:00 on day-of-month 10
+    #    - cron: '*/10 * * * *' # Run workflow At every 10th minute.
+    - cron: '* * * * *'
   # Run workflow on pushes to the main branch
   push:
     branches:
@@ -14,7 +15,7 @@ on:
 # Steps to carry out
 jobs:
   build:
-    # Create a ubuntu virtual machine
+    # Create an ubuntu virtual machine
     runs-on: ubuntu-latest
 
     # Checkout repo code
