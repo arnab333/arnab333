@@ -2,7 +2,7 @@
 
 ## Software Engineer
 
-A backend engineer with 3+ years of experience building high-performance, cloud-native systems. I specialize in
+A backend engineer with 6+ years of experience building high-performance, cloud-native systems. I specialize in
 Node.js,
 TypeScript, and Java, crafting resilient microservices, scalable APIs, and distributed architectures. Passionate about
 CI/CD, DevOps, and system design, I love turning complex technical challenges into elegant, maintainable solutions.
