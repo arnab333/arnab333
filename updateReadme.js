@@ -1,8 +1,7 @@
-// Include node fs (file stream) and https modules
 const fs = require('fs');
 
 function getTotalYears() {
-    const joinDate = new Date(2019, 8, 9);
+    const joinDate = new Date(2019, 8, 9); // Sept 9, 2019
     const currentDate = new Date();
 
     const startMonth = joinDate.getFullYear() * 12 + joinDate.getMonth();
@@ -15,33 +14,28 @@ function getTotalYears() {
     return yearsOfExperience + '.' + monthsOfExperience;
 }
 
-const totalYears = getTotalYears();
+function escapeRegExp(string) {
+    return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
-function readWriteAsync() {
-    // Update README using FS
-    fs.readFile('README.md', 'utf-8', (err, data) => {
-        if (err) {
-            throw err;
-        }
+function updateReadme() {
+    const totalYears = getTotalYears();
+    const readmePath = 'README.md';
 
-        const stringToInsert = `I have around ${totalYears} years of experience`;
+    fs.readFile(readmePath, 'utf-8', (err, data) => {
+        if (err) throw err;
 
-        const regExp = new RegExp(
-            `I'm Arnab — a backend engineer with ${(totalYears - 0.1).toFixed(1)}+ years of experience building high-performance, cloud-native systems.`
-        ); // regex pattern string
+        const oldString = 'A backend engineer with 5+ years of experience building high-performance, cloud-native systems.';
+        const newString = `A backend engineer with ${totalYears}+ years of experience building high-performance, cloud-native systems.`;
 
-        const updatedMd = data.replace(regExp, stringToInsert);
+        const regex = new RegExp(escapeRegExp(oldString), 'g');
+        const updated = data.replace(regex, newString);
 
-        // Write the new README
-        fs.writeFile('README.md', updatedMd, 'utf-8', (err) => {
-            if (err) {
-                throw err;
-            }
-
-            console.log('README update complete.');
+        fs.writeFile(readmePath, updated, 'utf-8', (err) => {
+            if (err) throw err;
+            console.log(`README updated with ${totalYears}+ years of experience.`);
         });
     });
 }
 
-// Call the function
-readWriteAsync();
+updateReadme();
