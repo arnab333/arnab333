@@ -25,7 +25,7 @@ jobs:
         run: npm ci # or npm install
 
       - name: Run update script
-        run: node your-script.js # Replace with your actual script name
+        run: node updateReadme.js
 
       - name: Commit and push changes
         run: |
