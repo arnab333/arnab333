@@ -23,9 +23,9 @@ function updateReadme() {
     fs.readFile(readmePath, 'utf-8', (err, data) => {
         if (err) throw err;
 
-        const newLine = `A backend engineer with ${totalYears}+ years of experience building high-performance, cloud-native systems.`;
+        const newLine = `**Software Engineer 2 @ Autodesk** | Building cloud-native systems | ${totalYears}+ years of turning ideas into code`;
 
-        const regex = /A backend engineer with \d+(\.\d+)?\+ years of experience building high-performance, cloud-native systems\./;
+        const regex = /\*\*Software Engineer 2 @ Autodesk\*\* \| Building cloud-native systems \| \d+(\.\d+)?\+ years of turning ideas into code/;
 
         if (!regex.test(data)) {
             console.warn('Pattern not found in README.md. No changes made.');
